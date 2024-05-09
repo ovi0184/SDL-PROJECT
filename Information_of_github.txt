@@ -1,0 +1,50 @@
+Information of git & github.
+
+1.git version Command :
+Computer এ ইন্সটল গিট ভার্সন চেক করার জন্য:
+git --version
+
+2.mkdir Command :
+Computer এ গিট এর folder create করার জন্য
+mkdir folder_name
+
+3. CD Command :
+cd command use করা হয় directory change করার জন্য। আমরা একটা folder বা এর subfolder নিয়ে কাজ করতে চাইলে তখন cd command use করতে হয়।যেমন আমরা যদি SDL-PROJECT folder এর মধ্যে কাজ করতে চাই তাহলে আমাদের command দিতে হবে: cd SDL-PROJECT
+
+4. Git config --global user.name Command :  এই command এর সাহায্যে computer এর git এর সাথে online এর github এর add করার জন্য github এর user name দিতে হয়।
+যেমন: git config --global user.name arif123 এভাবে লিখে enter press করতে হয়।
+
+5. Git config --global user.email Command :  এই command এর সাহায্যে computer এর git এর সাথে online এর github এর add করার জন্য github এর email দিতে হয়।
+যেমন: git config --global user.email arif123@gmail.com এভাবে লিখে enter press করতে হয়।
+
+6. LS Command : ls command use করা হয় একটা folder এর মধ্যে কতগুলো ফাইল আছে তা দেখার জন্য।
+যেমন: ls লিখে enter press করলে সব ফাইল শো করে।
+
+7. Git Initialize command :
+Computer এর ফাইল online Github এর সাথে attached করার জন্য সর্বপ্রথম এই command টি use করতে হয়।
+যেমন: git init লিখে enter press করলে হয়।
+
+8. Git status command : এই command এর সাহায্যে file track হয়েছে কিনা file add হয়েছে কিনা আর add হলেও commits হয়েছে কিনা তা চেক করা হয়।
+যেমন: git status লিখে enter press করলে হয়ে যায়।
+
+9. Git Add command : এই command এর সাহায্যে file add করা হয়। add দুই ভাবে করা যায়।
+1. folder এর সিঙ্গেল file add করে।যেমন: git add file_name লিখে enter Press করতে হয়.(নোট: এখানে file টি কি টাইপের file সেটাও লিখে দিতে হয়।যেমন:(.txt,.jpg etc)).
+
+2. Folder এর সব file add করে। যেমন : git add . লিখলে একটা folder এর সব file add process এ চলে যাবে।
+
+10. Git commit command : এই command এর সাহায্যে আমরা কি file add করছি আর কোন ধরনের file add krchi সেগুলো লিখে দিতে হয়। যেমন: git commit -m "file_name added" লিখে enter press করতে হয়।
+
+computer এর Git এর সাথে online এর github add করার জন্য একটা কথা মনে রাখতে হবে, computer এ যে নামে folder create করা আছে github এ same নামে একটা repository খুলতে হবে। নাম যদি মিল না থাকে তাহলে connect হবে না। repository খুলার পর ওই repository এর সাথে connect হওয়ার জন্য কিছু লিংক দিবে সেগুলো copy করে রাখা ভালো।
+লিংকগুলো হলো:
+1. git remote add origin https://link
+2. git branch -M main
+3. git push -u origin main
+এই sequence এ লিখলে computer এর git এর সাথে github এর add হওয়ার জন্য confirmation link আসবে। তারপর confirmed করে নিলে লিংকড হয়ে যবে।
+
+11. Git branch command : এই কমান্ডের সাহায্যে আমরা ফাইল কোন Branch এ add করবো সেটা  সিলেক্ট করবো। যদি main Branch এ হয় তাহলে হবে:
+git branch -M main
+
+12. Git push command : এই command এর সাহায্যে আমরা আমাদের computer এর file online এ push করবো।এটাই হচ্ছে ফাইল attached করার শেষ ধাপ। সব process ঠিক থাকলে এই ধাপে file online এ upload হয়ে যাবে।
+যেমন: git push -u origin main
+
+13. Git log : এ command এর সাহায্যে কে কি add করলো কে কি update করলো file এর মধ্যে সব জানা যাবে। যেমন : git log লিখে Enter press করলে হবে।
