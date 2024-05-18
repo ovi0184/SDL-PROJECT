@@ -48,3 +48,6 @@ git branch -M main
 যেমন: git push -u origin main
 
 13. Git log : এ command এর সাহায্যে কে কি add করলো কে কি update করলো file এর মধ্যে সব জানা যাবে। যেমন : git log লিখে Enter press করলে হবে।
+
+14.git pull: এ command এর সাহায্যে অন্যজন কিছু new add করলে সেটা নিজের pc তে নিয়ে আসা।লিখার নিয়ম:
+git pull
