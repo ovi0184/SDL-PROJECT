@@ -13,12 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('login', function (Blueprint $table) {
+        Schema::create('login_table', function (Blueprint $table) {
             $table->id('login_id');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('user_id')->on('registration_table')->onUpdate('cascade')->onDelete('cascade');
             $table->string('user_name',60);
             $table->string('password');
             $table->string('login status');
-            $table->string('failure reason');
+            $table->string('failure reason'); 
         });
     }
 
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('login');
+        Schema::dropIfExists('login_table');
     }
 };

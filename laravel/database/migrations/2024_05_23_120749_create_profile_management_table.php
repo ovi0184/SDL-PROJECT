@@ -14,7 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('profile_management', function (Blueprint $table) {
-            $table->id('profile_id');
+            $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('user_id')->on('registration_table')->onUpdate('cascade')->onDelete('cascade');
             $table->string('first_name',60);
             $table->string('last_name',60);
             $table->string('email');
@@ -23,7 +25,7 @@ return new class extends Migration
             $table->string('profile_picture',300);
             $table->string('Bio');
             $table->string('status');
-            $table->string('additional_information');
+            $table->string('additional_information');            
         });
     }
 

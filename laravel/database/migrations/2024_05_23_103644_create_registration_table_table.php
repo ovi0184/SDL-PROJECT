@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('registration', function (Blueprint $table) {
+        Schema::create('registration_table', function (Blueprint $table) {
             $table->id('user_id');
             $table->string('user_name',60);
             $table->string('password');
@@ -24,8 +24,7 @@ return new class extends Migration
             $table->date('dob')->nullable();
             $table->date('registration_date');
             $table->boolean('status')->default(1);
-            $table->date('last_login');
-            $table->timestamps();
+            $table->date('last_login');            
         });
     }
 
@@ -36,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('registration');
+        Schema::dropIfExists('registration_table');
     }
 };
