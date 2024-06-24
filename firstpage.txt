@@ -6,3 +6,4 @@ Necessary software & equipment list below:
 4.composser
 5.laravel
 6.online github account
+7.other things
